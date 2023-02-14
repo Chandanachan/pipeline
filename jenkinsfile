@@ -11,7 +11,7 @@ pipeline {
          '''
          }
        }
-      stage {
+      stage ('Deploy'){
        steps{
         echo "this sis deploy stage"
         }
