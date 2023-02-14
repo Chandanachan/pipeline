@@ -1,0 +1,19 @@
+pipeline {
+  agent any 
+    stages {
+      stage ('Build'){
+        steps{
+         sh '''
+         #!/bin/bash
+         pwd
+         ls
+         echo "this is build stage"
+         '''
+         }
+       }
+      stage {
+       steps{
+        echo "this sis deploy stage"
+        }
+       }
+   }
